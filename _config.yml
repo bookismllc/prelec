@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://prelic.dev
+title: The Antonija Prelec Memorial Lecture Series
+subtitle: Stony Brook University Libraries
+author: Stony Brook University Libraries Health Sciences Library
 simple_search: https://www.google.com/search
 description:
 
@@ -27,12 +27,12 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 source: source
-destination: public
+destination: public/
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: /categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -43,7 +43,7 @@ highlighter: pygments # default python pygments have been replaced by pygments.r
 
 paginate: 10          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
+recent_posts: 10       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 
@@ -70,7 +70,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: SBULibrary
 twitter_tweet_button: true
 
 # Google +1
@@ -95,7 +95,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-18601952-1
 
 # Facebook Like
 facebook_like: false
